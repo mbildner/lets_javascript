@@ -1,7 +1,7 @@
 module.exports = {
   output: {
     filename: 'index.js',
-    library: ['DopeApp']
+    library: ['PublishedApplication']
   },
   module: {
     loaders: [
