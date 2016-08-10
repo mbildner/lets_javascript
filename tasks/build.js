@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var webpack = require('webpack-stream');
 var connect = require('gulp-connect');
+var shell = require('gulp-shell')
 
 var webpackConfig = require('../webpack.config.js');
 
@@ -32,3 +33,7 @@ gulp.task('server-no-reload', function() {
     livereload: false
   });
 });
+
+gulp.task('gapps', ['webpack'], shell.task([
+  'node_modules/node-google-apps-script/bin/gapps push'
+]))
