@@ -3,4 +3,4 @@ requireDir('./tasks');
 
 var gulp = require('gulp');
 
-gulp.task('default', ['lint', 'jasmine-phantom']);
+gulp.task('default', ['lint', 'jasmine-phantom', 'webpack']);

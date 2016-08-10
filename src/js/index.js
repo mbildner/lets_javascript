@@ -1,16 +1,8 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
-var App = require('./app.js');
+import { Person } from './Person.js'
 
-function run() {
-  ReactDOM.render(
-    <App title='welcome.'/>,
-    document.getElementById('app')
-  );
-}
+const moshe = new Person('Moshe')
 
-if (document.readyState != 'loading') {
-  run();
-} else {
-  document.addEventListener('DOMContentLoaded', run);
+export {
+  Person,
+  moshe
 }
